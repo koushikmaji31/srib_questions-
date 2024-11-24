@@ -15,6 +15,8 @@ The rules for the virtual functions in C++ are as follows:
 * Virtual functions cannot be static. 
 * A virtual function can be a friend function of another class. 
 * Virtual functions should be accessed using a pointer or reference of base class type to achieve runtime polymorphism. The prototype of virtual functions should be the same in the base as well as the derived class. They are always defined in the base class and overridden in a derived class. It is not mandatory for the derived class to override (or re-define the virtual function), in that case, the base class version of the function is used. A class may have a virtual destructor but it cannot have a virtual constructor.
+![Alt text](https://media.geeksforgeeks.org/wp-content/uploads/VirtualFunctionInC.png)
+
 
 ## What is a memory leak? How does the OS know about memory leaks? What is a dangling pointer?
 A memory leak occurs when programmers create a memory in a heap and forget to delete it. The consequence of the memory leak is that it reduces the performance of the computer by reducing the amount of available memory. Eventually, in the worst case, too much of the available memory may become allocated, all or part of the system or device stops working correctly, the application fails, or the system slows down vastly.
